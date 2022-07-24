@@ -20,8 +20,11 @@ const Content = () => {
             </section>
             
             <section className="map">
-                <h5 id='maptitle'>Find Us - <em>125 West Nelson Street</em></h5>
-                <Wrapper apiKey={ key } render={render}>
+                <div className="map-text">
+                    <h5 id='maptitle'>Find Us - <em>125 West Nelson Street</em></h5>
+                    <a className="gm-link" href="https://www.google.com/maps/place/Blue+Sky+Bakery/@37.7852794,-79.4464588,17z/data=!3m1!4b1!4m5!3m4!1s0x884ccbb93cedf141:0xa46ef24529eae5b6!8m2!3d37.785271!4d-79.4443123">View on Google Maps</a>
+                </div>
+                <Wrapper apiKey={ key } render={ render }>
                      <Map />
                 </Wrapper>
             </section>

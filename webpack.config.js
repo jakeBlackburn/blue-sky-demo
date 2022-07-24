@@ -2,6 +2,7 @@ const path = require('path');
 const Dotenv = require('dotenv-webpack');
 
 
+
 module.exports = {
     output: {
         path: path.join(__dirname, '/dist'),
@@ -28,7 +29,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new Dotenv()
+        new Dotenv(),
     ]
     
 }
