@@ -1,4 +1,5 @@
 import React from 'react';
+import image from '../../public/outside.png'
 
 const Header = () => {
     return (
@@ -7,7 +8,7 @@ const Header = () => {
                 <h1 id='title'>Blue Sky</h1>
                 <h3 id='subtitle'><em>Good Food - Great Mood</em></h3>
             </div>
-            <img src='outside.png' />
+            <img src={image} />
         </header>
     );
 }
