@@ -4,8 +4,7 @@ demo website made for blue sky bakery, Lexington VA.
 
 Uses Express backend, React frontend, basic CSS, and a service called GloriaFood to make online ordering and payment easy to configure. This app was created without using Create React App; all webpack configuration was done manually.
 
-The site itself is a simple one-page react app with CSS styles. It includes an HTML snippet found in the "buttons" div
-(src/index.html) which links to the GloriaFood API, retrieving the menu/reservation options associated with the restaurant profile. Because this is just a demo, the buttons lead to "demo restaurant" with limited options, but changing things such as adding a new item to the menu is as simple as logging in to the GloriaFood dashboard and updating the details/configuration.
+The site itself is a simple one-page react app with CSS styles. The 'Buttons' component links to the GloriaFood API, retrieving the menu/reservation options associated with the restaurant profile. Because this is just a demo, the buttons lead to "demo restaurant" with limited options, but changing things such as adding a new item to the menu is as simple as logging in to the GloriaFood dashboard and updating the details/configuration.
 
 It is also integrated with google maps. The live demo @ - https://blue-sky-demo.herokuapp.com - does not have the map active, it says "for development purposes only". This is because the Google Maps Api key is not visible to the app. Heroku supports environemnt variables, but Ive tried to add the Api key many times and it still fails to work. I've looked around for a fix for this problem, but was unable to find anything. 
 

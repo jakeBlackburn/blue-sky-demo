@@ -1,5 +1,7 @@
 import React from 'react'
 
+// footer with links to email, phone, and social media
+
 const Footer = () => {
     return (
         <footer>

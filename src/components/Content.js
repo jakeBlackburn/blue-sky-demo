@@ -3,7 +3,12 @@ import Map from './Map'
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import Loading from './Loading'
 
+// Content wrapper component
+// uses Google Maps API key for Map component Wrapper, used to load Google Maps API
+
 const key = process.env.GOOGLE_MAPS_API_KEY
+
+// renders loading component while map is loading
 
 const render = (status) => {
     if (status === Status.LOADING) return <Loading />;
@@ -28,8 +33,6 @@ const Content = () => {
                      <Map />
                 </Wrapper>
             </section>
-            
-
         </section>
         );
 }

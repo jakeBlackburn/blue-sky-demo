@@ -1,6 +1,8 @@
 import React from 'react';
 import image from '../../public/outside.png'
 
+// header and heroimage
+
 const Header = () => {
     return (
         <header>
