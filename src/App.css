@@ -1,24 +1,27 @@
 body {
-    background-color: black;
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
-    margin: 100px 0 0 0;
+    margin: 0;
     font-family: Copperplate;
 }
 
-        /* buttons */
+    /* buttons */
 
 #buttons {
     padding: 2% 0%;
-    font-size: 2rem;
+    font-size: 1.7rem;
     display: flex;
     justify-content: center;
     text-align: center;
-    border-top: 1px solid salmon;
-    background-color: aliceblue;
+    border-bottom: 1px solid skyblue;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-.menu {
+.menu, .reservation {
     border: 3px solid salmon;
     border-radius: 15px;
     padding: 2%;
@@ -27,43 +30,30 @@ body {
     cursor: pointer;
 }
 
-.menu:hover {
-    text-shadow: 2px 2px skyblue;
-}
-
-.reservation {
-    border: 3px solid skyblue;
-    border-radius: 15px;
-    padding: 2%;
-    margin-left: 5%;
-    background-color:floralwhite;
-    cursor: pointer;
-}
-
-.reservation:hover {
+.menu:hover, .reservation:hover {
     text-shadow: 2px 2px salmon;
 }
 
-        /* header */
+    /* header */
+
 header {
     margin: 0;
     padding: 0;
-    height: 550px;
-    position: relative;
-    overflow: hidden;
+    height: 540px;
+    border-bottom: 1px solid skyblue;
 }
 
 .header {
-    background-color: whitesmoke;
+    background-color: aliceblue;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-weight: 1000; 
     width: 100%;
-    position: fixed;
+    position: sticky;
     top:0;
-    height: 100px;
-    border-bottom: 2px solid gold;
+    height: 90px;
+    border-bottom: 1px solid skyblue;
     z-index: 1;
 }
 
@@ -71,20 +61,19 @@ header {
     font-size: 5rem;
     margin: 0;
     color: black;
-    text-shadow: 3px 3px gold;
+    text-shadow: 3px 3px skyblue;
     text-align: center;
 }
 
 #subtitle {
     font-size: 1.5rem;
     color: black;
-    text-shadow: 2px 2px gold;
+    text-shadow: 2px 2px skyblue;
     text-align: center;
 
 }
 
 img {
-    margin: 0;
     width: 100%;
     height: auto;
     z-index: -1;
@@ -93,14 +82,14 @@ img {
     right: 0;
 }
 
-        /* content */
+    /* content */
 
 .content {
-    background-color: whitesmoke;
-    border-top: 1px solid salmon;
+    background-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 25px;
 }
 
 .map-text {
@@ -113,7 +102,7 @@ img {
     padding: 10px;
     margin-bottom: 10px;
     font-size: 1rem;
-    background-color: blanchedalmond;
+    background-color: floralwhite;
     border: 2px solid black;
     border-radius: 5px;
 }
@@ -129,6 +118,8 @@ img {
     font-size: 200%;
     margin: 3% 2%;
 }
+
+    /* map */
 
 .map {
     margin-bottom: 20px;
@@ -175,13 +166,13 @@ address {
     #title {
         font-size: 2.5rem;
         font-weight: 600;
-        text-shadow: 2px 2px gold;
+        text-shadow: 2px 2px skyblue;
     }
 
     #subtitle {
         font-size: 1.2rem;
         font-weight: 400;
-        text-shadow: 1px 1px gold;
+        text-shadow: 1px 1px skyblue;
     }
 
     img {
@@ -193,24 +184,16 @@ address {
     }
 
     #buttons {
-        font-size: 1.3rem;
-        flex-direction: column;
-        align-items: center;
+        font-size: 1rem;
     }
 
-    .menu {
-        margin-right: 0%;
-        margin-bottom: 3%;
-        padding: 3% 2%;
-        width: 50%;
-        border-width: 3px;
+    .menu, .reservation {
+        padding: 2%;
+        border-width: 2px;
     }
 
-    .reservation {
-        margin-left: 0%;
-        padding: 3% 2%;
-        width: 50%;
-        border-width: 3px;
+    .menu:hover, .reservation:hover {
+        text-shadow: 1px 1px salmon;
     }
 
     .content {
@@ -245,10 +228,6 @@ address {
 
 
 @media screen and (max-width: 450px) {
-
-    body {
-        margin-top: 80px;
-    }
     
     #title {
         font-size: 2rem;
@@ -265,7 +244,7 @@ address {
     }
 
     .header {
-        height: 80px;
+        height: 60px;
     }
 
     img {

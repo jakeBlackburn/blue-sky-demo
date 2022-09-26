@@ -7,7 +7,7 @@ const key = process.env.GOOGLE_MAPS_API_KEY
 
 const render = (status) => {
     if (status === Status.LOADING) return <Loading />;
-  };
+};
 
 const Content = () => {
     
